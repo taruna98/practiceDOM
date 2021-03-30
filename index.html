@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            text-align: center;
+        }
+
+        button {
+            color: white;
+            background-color: rgb(19, 132, 207);
+            border: none;
+            width: 120px;
+            height: 40px;
+            border-radius: 6px;
+            font-family: sans-serif;
+            font-size: 16px;
+            margin: 10px;
+        }
+
+        button:hover {
+            color: rgb(241, 238, 238);
+            background-color: rgb(68, 98, 161);
+            border: none;
+            width: 120px;
+            height: 40px;
+            border-radius: 6px;
+            font-family: sans-serif;
+            font-size: 16px;
+            cursor: grab;
+        }
+
+        .square {
+            width: 20px;
+            height: 20px;
+            margin: 10px auto;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .biru-muda {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Color Testing</h1>
+
+    <div class="row">
+        <div class="col-12">
+            <button type="button" id="btn">
+                Click
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="square red"></div>
+            <input type="range" name="sRed" min="0" max="255">
+            <div class="square green"></div>
+            <input type="range" name="sGreen" min="0" max="255">
+            <div class="square blue"></div>
+            <input type="range" name="sBlue" min="0" max="255">
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
